@@ -60,7 +60,7 @@ ROOT_URLCONF = 'blogging_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend/components')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend/build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,5 +130,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 CORS_ALLOW_ALL_ORIGINS = True
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend_build/static'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
